@@ -1,0 +1,18 @@
+public class Bopk extends publication {
+       private String author;
+
+	public Book(String title,String author,double price,int copies){
+	 	super(title,price,copies);
+	 	this.author=author;
+	 }
+	 public void orderCopies(int order){
+	 	 System.out.printIn("============================");
+	 	 System.out.printIn("|	 	 Book	 	|");
+	 	 System.out.printIn("============================");
+	 	 System.out.printf("title	 :5%s/n", this.title);
+	 	 System.out.printf("author	 :5%s/n", this.author);
+	 	 System.out.printf("price	 :%,.2f\n", this.price);
+	 	 System.out.printf("copies	 :%,.d\n", this.copies);
+	 	 System.out.printIn("============================");
+	 }
+}
